@@ -1,0 +1,125 @@
+.why
+  padding 15px 0 60px
+  .wrapper 
+    max-width: 962px
+  .el1
+    position absolute
+    width 1887px
+    top: -183px;
+    left: -950px;
+    z-index -1
+  .el2
+    position absolute
+    width 1887px
+    top -183px
+    right -950px
+    z-index -1
+  .title 
+    margin-bottom 25px
+  .text 
+    margin-bottom 30px
+  .blocks
+    display flex
+    justify-content space-between
+    margin-top 48px
+  .block 
+    max-width: 385px 
+    width calc(50% - 10px)
+    padding-top 15px
+    position relative
+    min-height: 511px
+    &:first-child 
+      .block-rocket
+        right 11px
+    &:last-child 
+      .block-rocket
+        left 11px
+    &-rocket 
+      position absolute
+      top 0
+      max-width 385px
+      width 100%
+      z-index -1
+    &-logo 
+      max-width: 330px
+      width 100%
+      margin 0 auto 70px
+    &-item
+      text-align center
+      margin-bottom 15px
+      .num 
+        display block
+        color: #E6017A;
+        font-family: $custom-font-family 
+        font-size: 20px;
+        line-height: 30px;
+  .content 
+    max-width: 960px
+    width 100%
+    margin 43px auto 0
+    position relative
+    padding 33px 90px 42px
+    .line
+      position absolute
+      z-index -1
+      width 982px
+      left: -2px;
+      top: 27px;
+    .quote
+      position absolute
+      width 90px
+      &1
+        top 0
+        left -15px
+      &2
+        bottom 0 
+        right -14px
+    &-text 
+      font-size: 35px;
+      line-height: 50px;
+      font-family: $custom-font-family
+      text-align center
+
+  @media (max-width : 998px)
+    padding-bottom 50px
+    .block-logo 
+      max-width: 220px
+      margin-bottom 30px
+    .block
+      min-height: 370px
+      &-rocket 
+        max-width: 280px
+      &:last-child
+        .block-rocket
+          left auto
+          right 15px
+      &:first-child
+        .block-rocket
+          right auto
+          left 15px
+    
+    .content
+      padding 42px 60px 42px
+      &-text 
+        font-size 25px
+        line-height 35px
+      .quote
+        width 60px
+        &1
+          left 0
+        &2
+          right 0
+
+  
+  @media (max-width : 768px)
+    .blocks
+      flex-direction: column
+      align-items center
+    .block 
+      width 100%
+      &:first-child
+        margin-bottom 30px
+    .content 
+      padding 20px 30px
+      .quote
+        width 25px

@@ -1,0 +1,45 @@
+.incubator
+  padding 33px 0
+  
+  .text 
+    margin-top 21px
+  .subtitle 
+    margin-top 35px
+  .blocks
+    display flex
+    justify-content space-between
+    flex-wrap: wrap
+    margin 44px -10px 0
+  .block
+    width calc(33.333% - 20px)
+    margin 0 10px 20px
+    text-align center
+    min-height: 250px
+    display flex
+    justify-content center
+    align-items center
+    background-color #010F27
+    background-position: center bottom
+    background-repeat no-repeat
+    background-size: cover
+    border-radius 150px
+    padding 20px 45px
+    &.blue
+      background-image: url('../img/main/incubator/bg-blue.png')
+    &.pink
+      background-image: url('../img/main/incubator/bg-pink.png')
+
+  @media (max-width : 998px)
+    .block
+      width calc(50% - 20px)
+      min-height: 200px
+      border-radius: 80px
+      padding 20px 25px
+
+  @media (max-width : 580px)
+    .blocks
+      margin 40px 0 0
+    .block
+      width 100%
+      max-width: 380px
+      margin 0 auto 20px

@@ -1,0 +1,72 @@
+.blockchains
+  padding 80px 0
+  .wrapper 
+    max-width: 1040px
+  .title 
+    margin-bottom 21px
+  .text 
+    max-width: 700px
+    width 100%
+    margin 0 auto 34px
+  .subtitle 
+    margin-bottom 30px
+  .blocks 
+    margin-top 42px
+  .block 
+    display flex
+    align-items center
+    max-width: 905px
+    width 100%
+    margin-bottom 16px
+    &:nth-child(odd)
+      justify-content flex-end
+      margin-left auto
+      .block-info 
+        margin-left 110px
+        text-align left
+    &:nth-child(even)
+      justify-content flex-start
+      margin-right auto
+      .block-info 
+        margin-right: 110px
+        text-align right
+    &-img 
+      max-width: 300px
+    &-info 
+      max-width 495px
+      width 100%
+    &-title 
+      margin-bottom 16px
+    &-text 
+      line-height: 30px;
+      font-weight 300
+  
+  @media (max-width : 998px)
+    padding 50px 0
+    .block 
+      &:nth-child(odd)
+        margin 0 auto 50px
+        .block-info 
+          margin-left 40px
+      &:nth-child(even)
+        margin 0 auto 50px
+        .block-info 
+          margin-right: 40px
+      &:last-child 
+        margin-bottom 0
+  @media (max-width : 768px)
+    .block 
+      flex-direction: column 
+      &-img 
+        margin-bottom 30px
+      &:nth-child(odd)
+        .block-info 
+          margin-left 0
+          text-align center
+      &:nth-child(even)
+        .block-img 
+          order 1
+        .block-info 
+          order: 2
+          margin-right: 0
+          text-align center

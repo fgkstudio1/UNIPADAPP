@@ -1,0 +1,89 @@
+.power
+  padding 63px 0
+  .wrapper
+    max-width: 1092px
+  &-line 
+    position absolute
+    z-index -1
+    &.line1
+      top: 379px;
+      left: 192px;
+    &.line2
+      bottom: 20px;
+      left: 232px;
+  .blocks
+    display flex
+    flex-wrap: wrap
+    margin 45px -25px 0
+  .block 
+    width calc(33.333% - 50px)
+    max-width: 320px
+    margin 0 25px 35px
+    padding 33px 30px
+    background-color #000D25
+    background-position: center bottom
+    background-repeat no-repeat
+    background-size: cover
+    display flex
+    border-radius: 200px;
+    &.blue 
+      background-image: url('../img/main/power/blue-bg1.png')
+      .block-content
+        background-image: url('../img/main/power/blue-bg2.png')
+    &.pink 
+      background-image: url('../img/main/power/pink-bg1.png')
+      .block-content
+        background-image: url('../img/main/power/pink-bg2.png')
+    &-content 
+      max-width: 260px
+      width 100%
+      margin 0 auto 
+      text-align center
+      padding 40px 30px 57px
+      background-position: center bottom
+      background-repeat no-repeat
+      background-size: cover
+      border-radius: 160px;
+    &-icon 
+      display flex
+      justify-content center
+      align-items center
+      height 52px
+    &-title 
+      margin-top 20px
+    &-text 
+      margin-top 15px
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 30px
+  
+  @media (max-width : 998px)
+    padding 50px 0 30px
+    .blocks
+      margin 45px -10px 0
+    .block 
+      width calc(33.3333% - 20px)
+      margin 0 10px 20px
+      padding 23px 20px
+      &-content 
+        padding 40px 20px 57px
+      &-text 
+        line-height 25px
+  @media (max-width : 768px)
+    .wrapper 
+      max-width: 610px
+    .block 
+      width calc(50% - 20px)
+      min-height: 475px
+  @media (max-width : 580px)
+    .blocks 
+      max-width: 320px 
+      margin 0 auto
+    .block 
+      width 100%
+      margin 0 auto 20px
+      padding 33px 30px
+      min-height: 475px
+      &-content 
+        padding 40px 30px 57px
+  

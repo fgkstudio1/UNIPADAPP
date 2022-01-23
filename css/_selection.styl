@@ -1,0 +1,159 @@
+.selection
+  padding 82px 0 0px
+  &-bg 
+    position absolute
+    width 1440px
+    left 50% 
+    top -74%
+    transform: translateX(-50%)
+    pointer-events: none
+    z-index -1
+  .text
+    margin-top 21px
+  .subtitle 
+    margin-top 35px
+    margin-bottom 83px
+  .blocks 
+    display flex
+    justify-content space-between
+    margin 0px -10px 40px
+  .block 
+    width calc(25% - 20px)
+    margin 0 10px
+    border: 2px solid #000D25
+    border-radius: 50px
+    text-align center
+    min-height: 90px
+    display flex
+    justify-content center
+    align-items center
+    position relative
+    padding 0 10px
+    h3 
+      font-size 20px
+      line-height 25px
+    &:after 
+      content ""
+      position absolute
+      width 28px 
+      height 19px
+      background-image: url(../img/main/selection/line.svg)
+      background-repeat: no-repeat
+      background-size cover
+    
+    &.dark 
+      background #000D25
+    &.border 
+      border-color: #ffffff
+  
+  @media (min-width: 999px) 
+    .block 
+      &:after 
+        right -22px
+      &:nth-child(odd)
+        &:after
+          bottom 0
+      &:nth-child(even)
+        &:after
+          bottom 48px
+          right -30px
+          transform: rotate(-70deg)
+      &:last-child:after 
+        display none
+      &:nth-child(odd)
+        top -49px
+  
+  @media (min-width: 481px) and (max-width: 998px) 
+
+    .block 
+      width calc(50% - 20px)
+      margin-bottom 40px
+      &:nth-child(odd)
+        top -49px
+        &.block3,
+        &.block7
+          top 0
+      &:nth-child(even)
+        &.block4,
+        &.block8
+          top -49px
+      &3,
+      &7
+        order 4 
+      &4,
+      &8
+        order 3
+      &2:after, 
+      &6:after 
+        background-image: url(../img/main/selection/line2.svg)
+        width 55px
+        height 37px
+        bottom: -41px;
+        right: -15px;
+        transform: rotate(-124deg);
+      &4:after
+        background-image: url(../img/main/selection/line2.svg)
+        width 55px
+        height 37px
+        bottom: -41px;
+        left: -15px;
+        transform: rotate(57deg);
+      &1,
+      &5,
+      &8 
+        &:after
+          bottom 0
+          right -22px
+      &3,
+      &7 
+        &:after 
+          left -30px
+          top 20px
+      &8:after 
+        display none
+  
+  @media (max-width : 998px)
+    padding 50px 0 0
+    .blocks 
+      flex-wrap wrap
+      max-width: 580px
+      width 100% 
+      margin 0 auto
+    .block 
+      &5.border, 
+      &7.border 
+        background #000D25
+        border-color: #000D25
+      &6.dark, 
+      &8.dark 
+        background transparent
+        border-color: #fff
+    &-bg 
+      bottom: -53%;
+      top auto
+  
+  @media (max-width : 480px)
+    &-bg 
+      bottom: -29%;
+      width 2200px
+      left 90%
+    .block
+      width 100%
+      margin 0 auto 25px
+      &:after 
+        width 25px
+      &:nth-child(odd)
+        &:after 
+          right 14px
+          bottom: calc(100% + 5px);
+          transform: rotate(234deg);
+      &:nth-child(even)
+        &:after 
+          left: 14px;
+          bottom: calc(100% + 5px);
+          transform: rotate(54deg);
+    
+    .block.dark:first-child:after 
+      display none
+     
+      

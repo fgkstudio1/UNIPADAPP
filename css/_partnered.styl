@@ -1,0 +1,54 @@
+.partnered
+  padding 11px 0 81px
+  &-bg 
+    position absolute
+    width 1821px
+    left 50% 
+    top -43%
+    transform: translateX(-50%)
+    pointer-events: none
+    z-index -1
+  .text 
+    margin-top 27px
+  .subtitle
+    margin-top 31px
+    font-size: 17px;
+    line-height: 30px;
+  .content 
+    display flex
+    justify-content space-between
+    align-items center
+    max-width: 708px
+    width 100%
+    margin 37px auto 0
+  .blocks 
+    display flex
+    flex-direction: column
+  .block 
+    display flex
+    flex-direction: column 
+    align-items center
+    &-icon 
+      margin-bottom 15px
+  .image
+    max-width: 278px
+    width 100% 
+    margin 50px auto
+  .adaptive 
+    display none
+
+  @media (max-width : 768px)
+    padding-top 20px
+    .content 
+      flex-direction: column
+    .blocks 
+      flex-direction: row
+      justify-content space-between
+      width 100%
+    .block 
+      width calc(50% - 10px)
+      text-align center
+    .desktop 
+      display none
+    .adaptive 
+      display flex

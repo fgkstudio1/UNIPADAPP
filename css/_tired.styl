@@ -1,0 +1,77 @@
+.tired
+  padding 50px 0 32px
+  .table 
+    margin-top 45px
+    overflow-x auto
+    &::-webkit-scrollbar 
+      height: 5px;
+    &::-webkit-scrollbar-track 
+      background: transparent;
+      box-shadow: none;
+    &::-webkit-scrollbar-thumb 
+      background: #03183F;
+  table
+    width 100%
+    border-radius: 150px
+    overflow hidden
+    position relative
+  thead 
+    th 
+      background #03183F
+      padding 38px 30px
+      vertical-align: middle
+      font-size: 17px;
+      line-height: 25px;
+      font-family: $custom-font-family 
+      border-left 3px solid #021230
+      // padding-left 0
+      &:first-child 
+        padding-left 40px
+        border-left: none
+        border-radius 150px 0 0 0
+      &:last-child 
+        border-radius 0 150px 0 0
+        padding-right 40px
+        
+  td 
+    height: 100px
+    vertical-align: middle
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 25px;
+    text-align center
+    vertical-align: middle
+    background #000D25
+    border-left 3px solid #021230
+    border-top 3px solid #021230;
+    padding 10px 30px
+    &:first-child 
+      padding-left 40px
+    &:last-child 
+      border-right: none
+      padding-right 40px
+  tbody
+    tr:last-child 
+      td
+        height 125px
+        &:first-child 
+          border-radius 0 0 0 150px
+        &:last-child 
+          border-radius 0 0 150px 0
+  tbody
+    tr:first-child 
+      td
+        border-top none
+
+  @media (max-width : 998px)
+
+    table 
+      margin-bottom 25px
+      border-radius: 120px
+      
+  @media (max-width : 768px)
+
+    table 
+      margin-bottom 20px
+      border-radius: 50px
+  
