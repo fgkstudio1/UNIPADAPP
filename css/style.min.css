@@ -265,6 +265,45 @@ input:focus::placeholder,
 textarea:focus::placeholder {
   opacity: 0;
 }
+
+
+.patner {
+  padding: 52px 0 0;
+}
+.patner-bg {
+  position: absolute;
+  width: 1440px;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: -1;
+  pointer-events: none;
+  z-index: -1;
+}
+.patner .block {
+  background: #010f27;
+  border-radius: 200px;
+  padding: 69px 20px 68px;
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.patner .block-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 745px;
+  width: 100%;
+  margin: 0 auto;
+}
 .footer {
   padding: 52px 0 0;
 }
