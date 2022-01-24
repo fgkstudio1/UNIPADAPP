@@ -1620,13 +1620,13 @@ span.bold {
     height: 600px;
   }
 }
-.bluezilla {
+.about {
   padding: 65px 0 65px;
 }
-.bluezilla .wrapper {
+.about .wrapper {
   max-width: 1250px;
 }
-.bluezilla-bg {
+.about-bg {
   position: absolute;
   width: 1440px;
   left: 40%;
@@ -1634,7 +1634,7 @@ span.bold {
   pointer-events: none;
   z-index: -1;
 }
-.bluezilla .content {
+.about .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1643,20 +1643,20 @@ span.bold {
           justify-content: flex-start;
   margin-top: 37px;
 }
-.bluezilla .image {
+.about .image {
   max-width: 389px;
   width: 100%;
   margin-right: 46px;
   margin-top: 28px;
 }
-.bluezilla .info {
+.about .info {
   max-width: 780px;
   width: 100%;
 }
-.bluezilla .info p {
+.about .info p {
   margin-bottom: 15px;
 }
-.bluezilla .info-bottom {
+.about .info-bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1667,10 +1667,10 @@ span.bold {
       -ms-flex-align: center;
           align-items: center;
 }
-.bluezilla .info-subtitle {
+.about .info-subtitle {
   margin-right: 25px;
 }
-.bluezilla .info-button {
+.about .info-button {
   margin-right: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1686,51 +1686,51 @@ span.bold {
   -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
-.bluezilla .info-button:hover {
+.about .info-button:hover {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
 }
 @media (max-width: 998px) {
-  .bluezilla .content {
+  .about .content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .bluezilla .image {
+  .about .image {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
     margin: 0 auto;
   }
-  .bluezilla .info {
+  .about .info {
     max-width: none;
     margin-bottom: 60px;
     text-align: center;
   }
-  .bluezilla .info-bottom {
+  .about .info-bottom {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     text-align: left;
   }
-  .bluezilla .info-button {
+  .about .info-button {
     max-width: 60px;
     margin: 0 10px;
   }
 }
 @media (max-width: 768px) {
-  .bluezilla .info-button {
+  .about .info-button {
     max-width: 50px;
     margin: 0 10px;
   }
 }
 @media (max-width: 480px) {
-  .bluezilla .info-bottom {
+  .about .info-bottom {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .bluezilla .info-subtitle {
+  .about .info-subtitle {
     width: 100%;
     text-align: center;
     margin-bottom: 15px;
